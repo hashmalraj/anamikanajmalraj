@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href="styles.css">
+	<title>Login</title>
+
+	<script language="JavaScript">
+		function show(){
+			var passw;
+			passw = document.login.password.value;
+			if (passw == "anajmalmika")
+			{	
+				window.location.assign("home.html");
+			}
+			else
+				alert("Incorrect Password");
+
+		}
+	</script>
+</head>
+<body>
+	<a href="home.html" class="logo"><b>AnamikaNajmalraj</b></a>
+	<center>
+		<form name="login">
+		<div style="font-size: 30px; color: white; margin-top: 10px;">
+			
+			Enter Password: 
+			<input type="text" name="password" class="pass">
+			<br>
+			<input type="button" value="NEXT" onclick="show()">
+		</div>
+		</form>
+	</center>
+</body>
+</html>

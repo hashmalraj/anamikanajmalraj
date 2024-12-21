@@ -1,0 +1,363 @@
+body{
+	background: #000026;
+	margin: 0;
+}
+::-webkit-scrollbar{
+	width: 0px;
+}
+.pass{
+	margin-top: 200px;
+	width: 200px;
+	height: 40px;
+	background: black;
+	border: solid white;
+	color: white;
+	font-size: 20px;
+}
+
+form input{
+	font-family: sans-serif;
+	font-size: 15px;
+	width: 50px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bolder;
+}
+
+.logo{
+	text-decoration: none;
+	color: white;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 30px;
+	margin-left: 70px;
+	margin-top: 10px;
+	z-index: 1;
+}
+#ig{
+	position: absolute;
+	opacity: 59%;
+	width: 400px;
+	height: 400px;
+	left: 33%;
+	top: 7%;
+	z-index: 0;
+}
+.block1{
+	height: 500px;
+	position: relative;
+}
+
+.heading{
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	color: white;
+	font-family: 'Noto Sans Display', serif;
+	position: absolute;
+	top: 30%;
+	font-size: 70px	;
+	text-shadow: rgba(138, 134, 134, 0.3) 0px 3px 10px;
+}
+
+.block2{
+	background-color: beige;
+	height: 300px;
+	position: relative;
+}
+.item{
+	position: absolute;
+	left: 7%;
+	top: 23%;
+	color: #000026;
+	font-family: 'Noto Sans Display', sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	width: 200px;
+	height: 180px;
+	text-align: center;
+}
+
+.item-img{
+	border-radius: 10px;
+	width: 200px;
+	height: 150px;
+}
+
+.item:hover{
+	transform: scale(1.1);
+	transition-duration: 0.4s;
+}
+
+.item:not(:hover){
+	transform: scale(1.0);
+	transition-duration: 0.4s;
+}
+
+.block3{
+	position: relative;
+	width: 100%;
+	height: 450px;
+}
+
+.text{
+	position: absolute;
+	left: -1000px;
+	top: 40px;
+	line-height: 135%;
+	color: white;
+	font-family: 'Noto Sans Display', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	animation: slide linear forwards;
+	animation-timeline: view();
+}
+
+@keyframes slide{
+	from{left: -1000px;}
+	to{left: 1500px;}
+}
+
+.line{
+	position: absolute;
+	left: 20px;
+	top: 30px;
+	width: 3px;
+	height: 400px;
+	background-color: beige;
+}
+
+.navi{
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	border-radius: 5px;
+	width: 100%;
+	height: 40px;
+	background: rgb(6, 3, 28);
+}
+
+.navitem{
+	padding: 2px;
+	width: 140px;
+	border-radius: 3px;
+	position: absolute;
+	color: beige	;
+	font-size: 22px;
+	top: 2px;
+	font-family: 'Oswald', serif;
+	font-weight: 450;
+	right: 400px;
+	text-decoration: none;
+}
+
+.navitem:hover{
+	background-color: white;
+	color: black;
+	transition-duration: 0.5s;
+}
+.navitem:not(:hover){
+	transform: scale(1.0);
+	transition-duration: 1s;
+}
+
+.pdisplay{
+	width: 90%;
+	height: 1100px;
+	position: relative;
+	top: 10px;
+	left: 5%;
+}
+
+.pblock1{
+	position: absolute;
+	width: 98%;
+	height: 32%;
+	padding: 10px;	
+}
+
+.pblock2{
+	position: absolute;
+	background-color: white;
+	border-radius: 5px;
+	width: 98%;
+	height: 32%;
+	padding: 10px;
+	top: 35%;
+}
+
+.pblock3{
+	position: absolute;
+	width: 100%;
+	height: 33%;
+	top: 105%;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.img{
+	position: absolute;
+	z-index: 2;
+	border-radius: 3px;
+	width: 250px;
+	height: 350px;
+}
+
+
+.img2{
+	position: absolute;
+	z-index: 2;
+	border-radius: 3px;
+	width: 260px;
+	height: 360px;
+}
+
+.text1{
+	position: absolute;
+	left: 320px;
+	font-size: 30px;
+	font-family: "Oswald", serif;
+	z-index: 1	;
+	color: ghostwhite	;
+}
+
+.pblock1:hover{
+	transform: scale(1.02);
+	transition-duration: 0.5s;
+}
+
+.pblock2:hover{
+	transform: scale(1.02);
+	transition-duration: 0.5s;
+}
+.pblock1:not(:hover){
+	transform: scale(1.0);
+	transition-duration: 0.5s;
+
+}
+.pblock2:not(:hover){
+	transform: scale(1.0);
+	transition-duration: 0.5s;
+}
+.img2:hover{
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+}
+.img2:not(:hover){
+	transform: scale(1.0);
+	transition-duration: 0.5s;
+}
+
+.song-block{
+	position: relative;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color: white;
+	left: 5%;
+	top: 5%;
+	width: 85%;
+	height: 300%;
+}
+
+.song{
+	color: white;
+	position: relative;
+	margin: 5px;
+	width: 100%;
+	height: 20vh;
+}
+
+.simg{
+	position: absolute;
+	border-radius: 5px;
+	width: 20%;
+	height: 20vh;
+}
+
+.stext{
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	left: 22%;
+	margin-top: 4px;
+}
+
+.song:hover{
+	background-color: white;
+	transition-duration: 0.5s;
+}
+.song:hover > .stext{
+	color: black;
+	transition-duration: 0.5s;
+}
+
+.timeline-block{
+	position: relative;
+	text-align: center;
+	font-family: 'oswald', sans-serif;
+	font-size: 34px;
+	color: white;
+	left: 5%;
+	top: 3%;
+	width: 85%;
+	height: 350%;
+}
+
+.tline{
+	position: absolute;
+	left: 50%;
+	top: 6%;
+	width: 0px;
+	border-radius: 3px;
+	height: 149%;
+}
+
+.tblock{
+	position: absolute;
+	top: 6%;
+	opacity: 0;
+	left: 50%;
+	width: 50%;
+	height: 10%;	
+	animation: showit linear forwards;
+	animation-timeline: view();
+	animation-range: entry 70% cover 40%;
+}
+
+.tdash{
+	position: absolute;
+	top: 50%;
+	width: 10%;
+	height: 0;
+	border-radius: 5px;
+	border: solid orange;
+}
+
+.tball{
+	position: absolute;
+	top: 48.5%;
+	left: -1%;
+	width: 3%;
+	height: 4%;
+	background-color: orange;
+	border-radius: 40%;
+}
+
+.tcontent{
+	position: absolute;
+	background-color: rgba(252, 252, 255, 0.45);
+	text-align: left;
+	padding: 2%;
+	top: 2%;
+	left: 11%;
+	width: 84%;
+	height: 94%;
+	border-radius: 5px;
+	box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 55px, rgba(255, 254, 254, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@keyframes showit{
+	to{scale: 1; opacity: 1;}
+}
